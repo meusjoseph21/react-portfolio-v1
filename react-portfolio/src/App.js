@@ -1,37 +1,24 @@
 import "./App.css";
-import {  Grid} from '@material-ui/core'
-import NavBar from './components/navbar/index'
-
 import React from "react";
-
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavBar from "./components/navbar/index";
+import About from "./pages/about";
+import Portfolio from "./pages/portfolio"
 
 function App() {
-
-  
-  
   return (
-    <div className="App">
-
-      <NavBar />
-
-      
-      <section className="about">
-        <Grid container spacing={3}>
-        <Grid item xs ={4}></Grid>
-        <Grid item xs={4} className="about">
-        <h1>Joseph Meus</h1>
-        <p>Joseph is a Full-Stack Web Developer</p>
-        </Grid>
-        <Grid item xs={4}></Grid>
+   
+      <Router>
+      <div className="App">
+        <NavBar />
+        <Route exact path ="/" component={About}/>
+        <Route exact path ="/portfolio" component ={Portfolio}/>
+      </div>
+    </Router>
 
 
-        </Grid>
-        
-      </section>
     
-      
-    </div>
+    
   );
 }
 

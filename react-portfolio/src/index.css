@@ -19,8 +19,11 @@ body { font-family: sans-serif; }
 }
 
 .about {
-  outline: solid 1px black;
   margin-top: 200px;
+}
+
+.card {
+  background-color: black;
 }
 
 code {
