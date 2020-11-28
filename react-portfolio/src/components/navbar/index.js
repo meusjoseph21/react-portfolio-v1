@@ -1,17 +1,14 @@
-import { Button } from "@material-ui/core";
+
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import {useLocation} from 'react-router-dom'
 
 
 
 function NavBar() {
 
-   function click(){
-       
-      
-    }
 
-    const location = useLocation();
+const location = useLocation()
 
   return (
     <div>
@@ -21,23 +18,18 @@ function NavBar() {
 
 
           <li className="nav-item">
-          <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+          <Link smooth to="/home" className={location.pathname === "/home" ? "nav-link active" : "nav-link"}>
           About
         </Link>
           </li>
 
         
-          
-          <li>
-            <Button color="secondary" className="nav-button" onClick={click}>
-              Portfolio
-            </Button>
+          <li className="nav-item">
+          <Link smooth to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+          Portfolio
+        </Link>
           </li>
-          <li>
-            <Button color="secondary" className="nav-button" onClick={click}>
-              Contact Me
-            </Button>
-          </li>
+
         </ul>
       </nav>
     </div>

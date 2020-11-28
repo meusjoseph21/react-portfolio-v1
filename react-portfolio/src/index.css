@@ -1,5 +1,5 @@
 body {
-background-color: #2E4159;
+  background-image: url('https://images.unsplash.com/photo-1587732305677-5bc3c4bda871?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1934&q=80');
 }
 body { font-family: sans-serif; }
 
@@ -14,19 +14,45 @@ body { font-family: sans-serif; }
 	text-shadow: 1px 1px 1px #ccc;
 }
 
-.nav-button {
-  color: #8F8EBF;
+
+
+#box {
+  Box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: transparent;
+  }
+
+
+.fade-in {
+	animation: fadeIn 3s;
+    opacity: 1;
+    margin-top: 200px;
 }
 
-.about {
-  margin-top: 200px;
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
 }
 
-.card {
-  background-color: black;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.left.w3-animate-left {
+  animation: 2s ease 0s normal none 1 running animateleft;
+}
+.right.w3-animate-right {
+  animation: 1.2s ease 0s normal none 1 running animateright;
+}
+.top.w3-animate-top {
+  animation: .8s ease 0s normal none 1 running animatetop;
+}
+.bottom.w3-animate-bottom {
+  animation: 1.9s ease 0s normal none 1 running animatebottom;
 }
