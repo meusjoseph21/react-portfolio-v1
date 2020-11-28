@@ -3,7 +3,7 @@ body {
 }
 body { font-family: sans-serif; }
 
-#main-menu .nav-bar { list-style:none; margin-top: 40px;margin-left: 1400px; }
+#main-menu .nav-bar { list-style:none; margin-top: 40px;margin-left: 1200px; }
 #main-menu .nav-bar li { display:inline; padding:0 10px; }
 
 #main-menu .nav-bar li a {
@@ -55,4 +55,8 @@ code {
 }
 .bottom.w3-animate-bottom {
   animation: 1.9s ease 0s normal none 1 running animatebottom;
+}
+
+.move {
+  margin-top: 300px;
 }

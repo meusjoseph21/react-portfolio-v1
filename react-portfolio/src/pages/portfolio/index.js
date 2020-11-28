@@ -5,8 +5,7 @@ import Zoom from '@material-ui/core/Zoom'
 
 const styling = {
     margin: {
-        marginTop: 200,
-        height: 400,
+        marginTop: 200
         
         
       

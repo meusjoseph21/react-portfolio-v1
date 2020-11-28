@@ -30,6 +30,12 @@ const location = useLocation()
         </Link>
           </li>
 
+          <li className="nav-item">
+          <Link smooth to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+          Contact
+        </Link>
+          </li>
+
         </ul>
       </nav>
     </div>
