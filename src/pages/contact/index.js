@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
+import React from "react";
+
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core/";
 import { AnimatedSocialIcon } from "react-animated-social-icons";
-import Resume from "./resume.pdf"
 import Typing from "react-typing-animation";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,12 +12,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Contact() {
-  const [numPages, setNumPages] = useState(2);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
+  
   const classes = useStyles();
   return (
     <div className="contact" id="contactMe">
@@ -135,17 +129,7 @@ function Contact() {
                 <span>Check Out My Resume</span>
               </h1>
             </Typing>
-            <div>
-              <Document
-                file={Resume}
-                onLoadSuccess={onDocumentLoadSuccess}
-              >
-                <Page pageNumber={pageNumber} />
-              </Document>
-              <p>
-                Page {pageNumber} of {numPages}
-              </p>
-            </div>
+            
           </div>
         </Grid>
       </Grid>
