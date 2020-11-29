@@ -3,7 +3,17 @@ import React from "react";
 import Avatar from '@material-ui/core/Avatar'
 import { makeStyles } from '@material-ui/core/styles';
 import joey from './static/images/avatar/profile.jpg'
-import {useLocation} from 'react-router-dom'
+
+import {SiJavascript} from 'react-icons/si'
+import {DiCss3} from 'react-icons/di'
+import {IoLogoHtml5} from 'react-icons/io'
+import {IoLogoNodejs} from 'react-icons/io'
+import {SiPostman} from 'react-icons/si'
+import {GrMysql} from "react-icons/gr"
+import {BsBootstrap} from 'react-icons/bs'
+import {DiMaterializecss} from 'react-icons/di'
+import {DiNpm} from "react-icons/di"
+import {SiAdobe} from 'react-icons/si'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,8 +23,14 @@ const useStyles = makeStyles((theme) => ({
       height: theme.spacing(7),
     },
 
-    color: {
-        color: '#F2F2F2'
+    spacing: {
+        marginRight:65
+    },
+
+    marginIcons: {
+        marginTop: 250,
+       
+
     }
   }));
   
@@ -22,14 +38,13 @@ const useStyles = makeStyles((theme) => ({
 
 function About() {
 
-    const location = useLocation()
 
   
       const classes = useStyles();
 
   return (
-    <section className="fade-in" >
-      <Grid container spacing={3}>
+    <section className="top" id="about">
+      <Grid container spacing={3} className="fade-in">
         <Grid item xs={4}></Grid>
         <Grid item xs={4} className="about" >
         
@@ -40,11 +55,35 @@ function About() {
 
 
           <Button variant="contained" color="primary" href="/contact">Say What's Up</Button>
+
+         
             
       
          
         </Grid>
         <Grid item xs={4}></Grid>
+      </Grid>
+      <Grid container spacing={3} className={classes.marginIcons}>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8}>
+            <div className="bottom w3-animate-bottom">
+            <SiJavascript color="white" size="45" className={classes.spacing}></SiJavascript>
+            <DiCss3 color="white" size='45' className={classes.spacing}></DiCss3>
+            <IoLogoHtml5 color="white" size="45" className={classes.spacing}></IoLogoHtml5>
+            <IoLogoNodejs color="white" size="45" className={classes.spacing}></IoLogoNodejs>
+            <SiPostman color="white" size="45" className={classes.spacing}></SiPostman>
+            <GrMysql color="white" size="45" className={classes.spacing}></GrMysql>    
+            <BsBootstrap color="white" size="45" className={classes.spacing}></BsBootstrap> 
+            <DiMaterializecss color="white" size="45" className={classes.spacing}></DiMaterializecss>
+            <DiNpm color="white" size="45" className={classes.spacing}></DiNpm>
+            <SiAdobe color ="white" size ="45" className={classes.spacing}></SiAdobe>
+
+
+            </div>
+           
+            
+        </Grid>
+        <Grid item xs={2}></Grid>
       </Grid>
     </section>
   );

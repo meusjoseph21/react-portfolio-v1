@@ -1,5 +1,6 @@
 body {
   background-image: url('https://images.unsplash.com/photo-1587732305677-5bc3c4bda871?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1934&q=80');
+
 }
 body { font-family: sans-serif; }
 
@@ -25,7 +26,11 @@ body { font-family: sans-serif; }
 .fade-in {
 	animation: fadeIn 3s;
     opacity: 1;
-    margin-top: 200px;
+   
+}
+
+.top{
+  margin-top: 200px;
 }
 
 @keyframes fadeIn {
@@ -73,4 +78,17 @@ code {
 
 .colorChange {
   color: white
+}
+
+#about {
+  height: 100vh
+  
+}
+
+#contactMe {
+  height: 100vh
+}
+
+#portfolio{
+  height: 100vh
 }

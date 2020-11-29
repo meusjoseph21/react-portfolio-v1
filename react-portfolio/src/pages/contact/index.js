@@ -1,5 +1,8 @@
 import React from "react";
 import { Grid } from "@material-ui/core/";
+import {GoMarkGithub} from 'react-icons/go'
+import {AiOutlineFacebook} from 'react-icons/ai'
+import {SiGmail} from 'react-icons/si'
 
 function Contact() {
   return (
