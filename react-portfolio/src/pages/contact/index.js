@@ -3,7 +3,7 @@ import { Grid } from "@material-ui/core/";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contactMe">
       <Grid container spacing={3}>
         <Grid item xs={4}></Grid>
         <Grid item xs={4}>

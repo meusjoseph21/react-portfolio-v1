@@ -3,6 +3,8 @@ import React from "react";
 import Avatar from '@material-ui/core/Avatar'
 import { makeStyles } from '@material-ui/core/styles';
 import joey from './static/images/avatar/profile.jpg'
+import {useLocation} from 'react-router-dom'
+
 
 const useStyles = makeStyles((theme) => ({
        
@@ -20,6 +22,8 @@ const useStyles = makeStyles((theme) => ({
 
 function About() {
 
+    const location = useLocation()
+
   
       const classes = useStyles();
 
@@ -31,11 +35,11 @@ function About() {
         
         <Avatar src={joey} alt="Joseph Meus" className={classes.large}></Avatar>
 
-        <h1>Joseph Meus</h1>
-          <p>Joseph is a Full-Stack Web Developer with experience in multiple front end and back end applications. His drive for learning and being able to create every day has allowed him to develop new skills every day. He strives to create responsive intuitive applications that give users an exploratory experience.  </p>
+        <h1 className="colorChange">Joseph Meus</h1>
+          <p className="colorChange">Joseph is a Full-Stack Web Developer with experience in multiple front end and back end applications. His drive for learning and being able to create every day has allowed him to develop new skills every day. He strives to create responsive intuitive applications that give users an exploratory experience.  </p>
 
 
-          <Button variant="contained" color="primary">Say What's Up</Button>
+          <Button variant="contained" color="primary" href="/contact">Say What's Up</Button>
             
       
          
