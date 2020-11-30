@@ -2,7 +2,7 @@ import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core/";
-import { AnimatedSocialIcon } from "react-animated-social-icons";
+// import { AnimatedSocialIcon } from "react-animated-social-icons";
 import Typing from "react-typing-animation";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +27,7 @@ function Contact() {
             </Typing>
             <Grid container spacing={0}>
               <Grid item xs={4}>
-                <ul className="noBullet">
+                {/* <ul className="noBullet">
                   <li className="fade-in">
                     <div className={classes.marginIcons}>
                       <AnimatedSocialIcon
@@ -116,7 +116,7 @@ function Contact() {
                       />
                     </div>
                   </li>
-                </ul>
+                </ul> */}
               </Grid>
             </Grid>
           </div>
