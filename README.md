@@ -50,8 +50,12 @@
   https://quiet-dawn-33739.herokuapp.com
 
   repository: https://github.com/meusjoseph21/react-portfolio-v1
-  
+
 
 
   ## Screenshots
+
+  <img src="./components/assets/images/port3.png">
+    <img src="./components/assets/images/port2.png">
+      <img src="./components/assets/images/port1.png">
 
