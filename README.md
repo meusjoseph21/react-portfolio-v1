@@ -55,7 +55,7 @@
 
   ## Screenshots
 
-  <img src="assets/images/port3.png">
+  <img src="./assets/images/port3.png">
     <img src="./assets/images/port2.png">
       <img src="./assets/images/port1.png">
 
