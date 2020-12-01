@@ -28,8 +28,8 @@ function Contact() {
   return (
     <div className="contact" id="contactMe">
       <Grid container spacing={3}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} md={1}></Grid>
+        <Grid item xs={12} md={10}>
           <div className="move">
             <Typing>
               <h1 className={classes.center}>
@@ -84,7 +84,7 @@ function Contact() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={1}></Grid>
+        <Grid item xs={12} md={12}></Grid>
       </Grid>
     </div>
   );

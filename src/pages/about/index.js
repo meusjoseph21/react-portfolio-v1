@@ -45,8 +45,8 @@ function About() {
   return (
     <section className="top" id="about">
       <Grid container spacing={3} className="fade-in">
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4} className="about" >
+        <Grid item xs={12} md={4}></Grid>
+        <Grid item xs={12} md={4}className="about" >
         
         <Avatar src={joey} alt="Joseph Meus" className={classes.large}></Avatar>
 
@@ -61,11 +61,11 @@ function About() {
       
          
         </Grid>
-        <Grid item xs={4}></Grid>
+        <Grid item xs={12} md={4}></Grid>
       </Grid>
       <Grid container spacing={3} className={classes.marginIcons}>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={2}></Grid>
+        <Grid item xs={12} md={8}>
             <div className="bottom w3-animate-bottom">
             <SiJavascript color="white" size="45" className={classes.spacing}></SiJavascript>
             <DiCss3 color="white" size='45' className={classes.spacing}></DiCss3>
@@ -83,7 +83,7 @@ function About() {
            
             
         </Grid>
-        <Grid item xs={2}></Grid>
+        <Grid item xs={12} md={2}></Grid>
       </Grid>
     </section>
   );

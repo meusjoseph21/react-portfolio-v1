@@ -25,8 +25,8 @@ function portfolio() {
     <div id="portfolio" >
         
         <Grid container spacing={2} style={styling.margin}>
-      <Grid item xs={2}></Grid>
-        <Grid item xs={3} className="left w3-animate-left">
+      <Grid item xs={12} md={2}></Grid>
+        <Grid item xs={12} md={3} className="left w3-animate-left">
           <div>
             <h1 className="center colorChange">Meal Matcher</h1>
             <img src={MealMatcher} alt="mealmatcher" className="resize"></img>
@@ -35,7 +35,7 @@ function portfolio() {
             <Button href="https://github.com/jessicaano92/meal_matcher_javascript_ajax" target = "_blank" color="primary">Repository</Button>
           </div>
         </Grid>
-        <Grid item xs={3} className="top w3-animate-top">
+        <Grid item xs={12} md={3} className="top w3-animate-top">
         <div>
             <h1 className="center colorChange">Random Password Generator</h1>
             <img src={Random} alt="randompassword" className="resize"></img>
@@ -45,7 +45,7 @@ function portfolio() {
           </div>
           
         </Grid>
-        <Grid item xs={3} className="right w3-animate-right">
+        <Grid item xs={12} md={3} className="right w3-animate-right">
         <div>
             <h1 className="center colorChange">Weather Dashboard</h1>
             <img src={Weather} alt="weather" className="resize"></img>
@@ -56,8 +56,8 @@ function portfolio() {
         </Grid>
         </Grid>
       <Grid container spacing={2}>
-      <Grid item xs={2}></Grid>
-        <Grid item xs={3} className="left w3-animate-left">
+      <Grid item xs={12} md={2}></Grid>
+        <Grid item xs={12} md={3} className="left w3-animate-left">
         <div>
             <h1 className="center colorChange">Express Handlebars</h1>
             <img src={Burger} alt="burger" className="resize"></img>
@@ -66,7 +66,7 @@ function portfolio() {
             <Button href="https://github.com/meusjoseph21/express-burgers-handlebars" target = "_blank"  color="primary">Repository</Button>
           </div>
         </Grid>
-        <Grid item xs={3} className="bottom w3-animate-bottom">
+        <Grid item xs={12} md={3} className="bottom w3-animate-bottom">
         <div>
             <h1 className="center colorChange">Hotel Motel</h1>
             <img src={Hotel} alt="hotelmotel" className="resize"></img>
@@ -75,7 +75,7 @@ function portfolio() {
             <Button href="https://github.com/ryanwit/hotel_motel" target = "_blank"  color="primary">Repository</Button>
           </div>
         </Grid>
-        <Grid item xs={3} className="w3-animate-right">
+        <Grid item xs={12} md={3} className="w3-animate-right">
         <div>
             <h1 className="center colorChange">Fitness Tracker</h1>
             <img src={Stats} alt="stats" className="resize"></img>
