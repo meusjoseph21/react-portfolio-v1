@@ -21,15 +21,7 @@ function NavBar() {
       <Grid container>
       <nav id="main-menu" item xs={12}>
         <ul className="nav-bar">
-          <Button
-            className={classes.margin}
-            color="primary"
-            variant="contained"
-          >
-            <a className="resumeButton" href={Resume} target="_blank">
-              Resume
-            </a>
-          </Button>
+         
 
           <li className="nav-item">
             <Link
